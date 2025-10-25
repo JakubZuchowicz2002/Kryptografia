@@ -31,6 +31,8 @@ partial class Form1
     private System.Windows.Forms.Label outputLabel;
     private System.Windows.Forms.NumericUpDown shiftNumericUpDown;
     private System.Windows.Forms.Label shiftLabel; // Dodaj pole na label
+    private System.Windows.Forms.Label keyLabel;
+    private System.Windows.Forms.TextBox keyTextBox;
 
     /// <summary>
     ///  Required method for Designer support - do not modify
@@ -47,6 +49,8 @@ partial class Form1
         this.outputLabel = new System.Windows.Forms.Label();
         this.shiftNumericUpDown = new System.Windows.Forms.NumericUpDown();
         this.shiftLabel = new System.Windows.Forms.Label(); 
+        this.keyLabel = new System.Windows.Forms.Label();
+        this.keyTextBox = new System.Windows.Forms.TextBox();
         ((System.ComponentModel.ISupportInitialize)(this.shiftNumericUpDown)).BeginInit();
         this.SuspendLayout();
         //
@@ -75,7 +79,7 @@ partial class Form1
         this.algorithmComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         this.algorithmComboBox.FormattingEnabled = true;
         this.algorithmComboBox.Items.AddRange(new object[] {
-            "Wybierz szyfr", "Szyfr Cezara"});
+        "Wybierz szyfr", "Szyfr Cezara", "Szyfr Vigenère'a", "Running Key Cipher"});
         this.algorithmComboBox.Location = new System.Drawing.Point(290, 29);
         this.algorithmComboBox.Name = "algorithmComboBox";
         this.algorithmComboBox.Size = new System.Drawing.Size(121, 23);
@@ -127,6 +131,24 @@ partial class Form1
         this.EncryptFileButton.UseVisualStyleBackColor = true;
         this.EncryptFileButton.Click += new System.EventHandler(this.EncryptFileButton_Click);
         //
+        // keyLabel
+        //
+        this.keyLabel.AutoSize = true;
+        this.keyLabel.Location = new System.Drawing.Point(290, 58);
+        this.keyLabel.Name = "keyLabel";
+        this.keyLabel.Size = new System.Drawing.Size(39, 15);
+        this.keyLabel.TabIndex = 9;
+        this.keyLabel.Text = "Klucz:";
+        this.keyLabel.Visible = false;
+        //
+        // keyTextBox
+        //
+        this.keyTextBox.Location = new System.Drawing.Point(290, 76);
+        this.keyTextBox.Name = "keyTextBox";
+        this.keyTextBox.Size = new System.Drawing.Size(121, 23);
+        this.keyTextBox.TabIndex = 10;
+        this.keyTextBox.Visible = false;
+        //
         // inputLabel
         //
         this.inputLabel.AutoSize = true;
@@ -150,6 +172,8 @@ partial class Form1
         this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         this.ClientSize = new System.Drawing.Size(430, 320); 
+        this.Controls.Add(this.keyLabel);
+        this.Controls.Add(this.keyTextBox);
         this.Controls.Add(this.EncryptFileButton);
         this.Controls.Add(this.shiftLabel);
         this.Controls.Add(this.shiftNumericUpDown);
@@ -165,6 +189,7 @@ partial class Form1
         ((System.ComponentModel.ISupportInitialize)(this.shiftNumericUpDown)).EndInit();
         this.ResumeLayout(false);
         this.PerformLayout();
+        
     }
 
     #endregion

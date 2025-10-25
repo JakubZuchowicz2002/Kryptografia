@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("kryptografia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e374aa836f0718f5393a21ecc62565011cd2f94a")]
 [assembly: System.Reflection.AssemblyProductAttribute("kryptografia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("kryptografia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

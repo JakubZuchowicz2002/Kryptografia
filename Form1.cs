@@ -12,22 +12,45 @@ namespace kryptografia
             InitializeComponent();
         }
 
-        private void EncryptButton_Click(object sender, EventArgs e)
+            private void EncryptButton_Click(object sender, EventArgs e)
         {
             string text = inputTextBox.Text;
             string wynik = "";
+            string? selected = algorithmComboBox.SelectedItem?.ToString();
 
-            if (algorithmComboBox.SelectedItem?.ToString() == "Szyfr Cezara")
+            if (selected == "Szyfr Cezara")
             {
-                int przesuniecie = (int)shiftNumericUpDown.Value; 
+                int przesuniecie = (int)shiftNumericUpDown.Value;
                 wynik = SzyfrCezara.Szyfruj(text, przesuniecie);
+            }
+            else if (selected == "Szyfr Vigenère'a")
+            {
+                string klucz = keyTextBox.Text;
+                if (string.IsNullOrWhiteSpace(klucz))
+                {
+                    MessageBox.Show("Podaj klucz!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                wynik = SzyfrVigenere.Szyfruj(text, klucz);
+            }
+            else if (selected == "Running Key Cipher")
+            {
+                string klucz = keyTextBox.Text;
+                if (string.IsNullOrWhiteSpace(klucz) || klucz.Length < text.Length)
+                {
+                    MessageBox.Show("Klucz musi być co najmniej tak długi jak tekst!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                wynik = SzyfrRunningKey.Szyfruj(text, klucz);
             }
             outputTextBox.Text = wynik;
         }
 
         private void EncryptFileButton_Click(object sender, EventArgs e)
         {
-            if (algorithmComboBox.SelectedItem?.ToString() != "Szyfr Cezara")
+            string? selected = algorithmComboBox.SelectedItem?.ToString();
+
+            if (selected == "Wybierz szyfr" || string.IsNullOrEmpty(selected))
             {
                 MessageBox.Show("Wybierz najpierw szyfr!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -40,8 +63,33 @@ namespace kryptografia
                 {
                     string inputPath = openFileDialog.FileName;
                     string text = File.ReadAllText(inputPath);
-                    int przesuniecie = (int)shiftNumericUpDown.Value;
-                    string zaszyfrowany = Kryptografia.SzyfrCezara.Szyfruj(text, przesuniecie);
+                    string zaszyfrowany = "";
+
+                    if (selected == "Szyfr Cezara")
+                    {
+                        int przesuniecie = (int)shiftNumericUpDown.Value;
+                        zaszyfrowany = Kryptografia.SzyfrCezara.Szyfruj(text, przesuniecie);
+                    }
+                    else if (selected == "Szyfr Vigenère'a")
+                    {
+                        string klucz = keyTextBox.Text;
+                        if (string.IsNullOrWhiteSpace(klucz))
+                        {
+                            MessageBox.Show("Podaj klucz!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                        zaszyfrowany = Kryptografia.SzyfrVigenere.Szyfruj(text, klucz);
+                    }
+                    else if (selected == "Running Key Cipher")
+                    {
+                        string klucz = keyTextBox.Text;
+                        if (string.IsNullOrWhiteSpace(klucz) || klucz.Length < text.Length)
+                        {
+                            MessageBox.Show("Klucz musi być co najmniej tak długi jak tekst!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                        zaszyfrowany = Kryptografia.SzyfrRunningKey.Szyfruj(text, klucz);
+                    }
 
                     using (SaveFileDialog saveFileDialog = new SaveFileDialog())
                     {
@@ -57,11 +105,13 @@ namespace kryptografia
             }
         }
 
-        private void algorithmComboBox_SelectedIndexChanged(object sender, EventArgs e)
+       private void algorithmComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            bool showShift = algorithmComboBox.SelectedItem?.ToString() == "Szyfr Cezara";
-            shiftNumericUpDown.Visible = showShift;
-            shiftLabel.Visible = showShift;
+        string? selected = algorithmComboBox.SelectedItem?.ToString();
+        bool showShift = selected == "Szyfr Cezara";
+        bool showKey = selected == "Szyfr Vigenère'a" || selected == "Running Key Cipher";
+        shiftNumericUpDown.Visible = shiftLabel.Visible = showShift;
+        keyTextBox.Visible = keyLabel.Visible = showKey;
         }
     }
 }
