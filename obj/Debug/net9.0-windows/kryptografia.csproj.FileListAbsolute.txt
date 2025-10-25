@@ -12,11 +12,15 @@ C:\Users\student\Desktop\Nowy folder\kryptografia\obj\Debug\net9.0-windows\refin
 C:\Users\student\Desktop\Nowy folder\kryptografia\obj\Debug\net9.0-windows\kryptografia.pdb
 C:\Users\student\Desktop\Nowy folder\kryptografia\obj\Debug\net9.0-windows\kryptografia.genruntimeconfig.cache
 C:\Users\student\Desktop\Nowy folder\kryptografia\obj\Debug\net9.0-windows\ref\kryptografia.dll
+C:\Users\student\Desktop\nowy folder\kryptografia\obj\Debug\net9.0-windows\kryptografia.Form1.resources
+C:\Users\student\Desktop\nowy folder\kryptografia\obj\Debug\net9.0-windows\kryptografia.csproj.GenerateResource.cache
 C:\Users\Kuba\Desktop\kryptografia\kryptografia - program\bin\Debug\net9.0-windows\kryptografia.exe
 C:\Users\Kuba\Desktop\kryptografia\kryptografia - program\bin\Debug\net9.0-windows\kryptografia.deps.json
 C:\Users\Kuba\Desktop\kryptografia\kryptografia - program\bin\Debug\net9.0-windows\kryptografia.runtimeconfig.json
 C:\Users\Kuba\Desktop\kryptografia\kryptografia - program\bin\Debug\net9.0-windows\kryptografia.dll
 C:\Users\Kuba\Desktop\kryptografia\kryptografia - program\bin\Debug\net9.0-windows\kryptografia.pdb
+C:\Users\Kuba\Desktop\kryptografia\kryptografia - program\obj\Debug\net9.0-windows\kryptografia.Form1.resources
+C:\Users\Kuba\Desktop\kryptografia\kryptografia - program\obj\Debug\net9.0-windows\kryptografia.csproj.GenerateResource.cache
 C:\Users\Kuba\Desktop\kryptografia\kryptografia - program\obj\Debug\net9.0-windows\kryptografia.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Kuba\Desktop\kryptografia\kryptografia - program\obj\Debug\net9.0-windows\kryptografia.AssemblyInfoInputs.cache
 C:\Users\Kuba\Desktop\kryptografia\kryptografia - program\obj\Debug\net9.0-windows\kryptografia.AssemblyInfo.cs
