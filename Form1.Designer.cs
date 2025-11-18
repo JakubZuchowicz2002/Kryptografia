@@ -42,6 +42,7 @@ partial class Form1
     private System.Windows.Forms.TextBox ivTextBox;
     private System.Windows.Forms.Button GenerateKeyButton;
     private System.Windows.Forms.Button GenerateNonceButton;
+    private System.Windows.Forms.Button GenerateRSAKeysButton;
 
     /// <summary>
     ///  Required method for Designer support - do not modify
@@ -68,6 +69,7 @@ partial class Form1
         this.ivTextBox = new System.Windows.Forms.TextBox();
         this.GenerateKeyButton = new System.Windows.Forms.Button();
         this.GenerateNonceButton = new System.Windows.Forms.Button();
+        this.GenerateRSAKeysButton = new System.Windows.Forms.Button();
 
         ((System.ComponentModel.ISupportInitialize)(this.shiftNumericUpDown)).BeginInit();
         this.SuspendLayout();
@@ -97,7 +99,7 @@ partial class Form1
         this.algorithmComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         this.algorithmComboBox.FormattingEnabled = true;
         this.algorithmComboBox.Items.AddRange(new object[] {
-        "Wybierz szyfr", "Szyfr Cezara", "Szyfr Vigenère'a", "Running Key Cipher", "AES", "ChaCha20"});
+        "Wybierz szyfr", "Szyfr Cezara", "Szyfr Vigenère'a", "Running Key Cipher", "AES", "ChaCha20", "RSA"});
         this.algorithmComboBox.Location = new System.Drawing.Point(290, 29);
         this.algorithmComboBox.Name = "algorithmComboBox";
         this.algorithmComboBox.Size = new System.Drawing.Size(170, 23);
@@ -269,6 +271,7 @@ partial class Form1
         this.Controls.Add(this.algorithmComboBox);
         this.Controls.Add(this.outputTextBox);
         this.Controls.Add(this.inputTextBox);
+        this.Controls.Add(this.GenerateRSAKeysButton);
         this.MinimumSize = new System.Drawing.Size(500, 420);
         this.Name = "Form1";
         this.Text = "Kryptografia";
@@ -301,6 +304,18 @@ partial class Form1
         this.GenerateNonceButton.Click += new System.EventHandler(this.GenerateNonceButton_Click);
 
         this.Controls.Add(this.GenerateNonceButton);
+
+        // 
+        // GenerateRSAKeysButton
+        // 
+        this.GenerateRSAKeysButton.Location = new System.Drawing.Point(470, 76);
+        this.GenerateRSAKeysButton.Name = "GenerateRSAKeysButton";
+        this.GenerateRSAKeysButton.Size = new System.Drawing.Size(100, 23);
+        this.GenerateRSAKeysButton.TabIndex = 19;
+        this.GenerateRSAKeysButton.Text = "Generuj klucze";
+        this.GenerateRSAKeysButton.UseVisualStyleBackColor = true;
+        this.GenerateRSAKeysButton.Visible = false;
+        this.GenerateRSAKeysButton.Click += new System.EventHandler(this.GenerateRSAKeysButton_Click);
     }
 
     #endregion

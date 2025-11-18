@@ -1,46 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\",
+  "WorkspaceRootPath": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|c:\\users\\kuba\\desktop\\kryptografia\\kryptografia - program\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|c:\\users\\kuba\\desktop\\kryptografia\\kryptografia - program\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\SzyfrAES.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SzyfrAES.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|c:\\users\\kuba\\desktop\\kryptografia\\kryptografia - program\\szyfrrsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|solutionrelative:szyfrrsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\SzyfrCezara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SzyfrCezara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|c:\\users\\kuba\\desktop\\kryptografia\\kryptografia - program\\szyfrvigenere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|solutionrelative:szyfrvigenere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\SzyfrRunningKey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SzyfrRunningKey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|c:\\users\\kuba\\desktop\\kryptografia\\kryptografia - program\\szyfrchacha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|solutionrelative:szyfrchacha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\SzyfrVigenere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SzyfrVigenere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|c:\\users\\kuba\\desktop\\kryptografia\\kryptografia - program\\szyfrrunningkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|solutionrelative:szyfrrunningkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\Form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|c:\\users\\kuba\\desktop\\kryptografia\\kryptografia - program\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\kryptografia.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:kryptografia.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|c:\\users\\kuba\\desktop\\kryptografia\\kryptografia - program\\szyfraes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|solutionrelative:szyfraes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\kryptografia.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|c:\\users\\kuba\\desktop\\kryptografia\\kryptografia - program\\szyfrcezara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|solutionrelative:szyfrcezara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\kryptografia.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:kryptografia.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|c:\\users\\kuba\\desktop\\kryptografia\\kryptografia - program\\kryptografia.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D3EF2DF1-0507-E30C-0C65-171D4700F571}|kryptografia.csproj|solutionrelative:kryptografia.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,62 +58,91 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SzyfrAES.cs",
-              "DocumentMoniker": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\SzyfrAES.cs",
-              "RelativeDocumentMoniker": "SzyfrAES.cs",
-              "ToolTip": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\SzyfrAES.cs",
-              "RelativeToolTip": "SzyfrAES.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAwwFYAAAAPAAAAAAAAAA==",
+              "Title": "SzyfrRSA.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\SzyfrRSA.cs",
+              "RelativeDocumentMoniker": "SzyfrRSA.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\SzyfrRSA.cs",
+              "RelativeToolTip": "SzyfrRSA.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAiwFAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T14:12:21.171Z",
+              "WhenOpened": "2025-11-18T13:05:44.764Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T15:55:07.004Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SzyfrChaCha.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\SzyfrChaCha.cs",
+              "RelativeDocumentMoniker": "SzyfrChaCha.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\SzyfrChaCha.cs",
+              "RelativeToolTip": "SzyfrChaCha.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAADwv6UAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T15:51:34.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SzyfrAES.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\SzyfrAES.cs",
+              "RelativeDocumentMoniker": "SzyfrAES.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\SzyfrAES.cs",
+              "RelativeToolTip": "SzyfrAES.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAAwLcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T14:12:21.171Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\Form1.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAFIBAAAAAAAAAAAAAHABAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAABgCAAAAAAAAAAAqwCMCAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T14:09:24.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "SzyfrVigenere.cs",
-              "DocumentMoniker": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\SzyfrVigenere.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\SzyfrVigenere.cs",
               "RelativeDocumentMoniker": "SzyfrVigenere.cs",
-              "ToolTip": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\SzyfrVigenere.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\SzyfrVigenere.cs",
               "RelativeToolTip": "SzyfrVigenere.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T14:09:21.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SzyfrRunningKey.cs",
-              "DocumentMoniker": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\SzyfrRunningKey.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\SzyfrRunningKey.cs",
               "RelativeDocumentMoniker": "SzyfrRunningKey.cs",
-              "ToolTip": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\SzyfrRunningKey.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\SzyfrRunningKey.cs",
               "RelativeToolTip": "SzyfrRunningKey.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -114,26 +151,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "SzyfrCezara.cs",
-              "DocumentMoniker": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\SzyfrCezara.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\SzyfrCezara.cs",
               "RelativeDocumentMoniker": "SzyfrCezara.cs",
-              "ToolTip": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\SzyfrCezara.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\SzyfrCezara.cs",
               "RelativeToolTip": "SzyfrCezara.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T14:09:20.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T14:09:20.042Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAMwCkAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAqwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T14:08:54.556Z",
               "EditorCaption": ""
@@ -141,53 +177,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Form1.resx",
-              "DocumentMoniker": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\Form1.resx",
-              "RelativeDocumentMoniker": "Form1.resx",
-              "ToolTip": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\Form1.resx",
-              "RelativeToolTip": "Form1.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-10-21T14:08:53.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "kryptografia.csproj.user",
-              "DocumentMoniker": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\kryptografia.csproj.user",
-              "RelativeDocumentMoniker": "kryptografia.csproj.user",
-              "ToolTip": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\kryptografia.csproj.user",
-              "RelativeToolTip": "kryptografia.csproj.user",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
-              "WhenOpened": "2025-10-21T14:08:50.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\Program.cs",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T14:08:42.416Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
+              "Title": "kryptografia.csproj.user",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\kryptografia.csproj.user",
+              "RelativeDocumentMoniker": "kryptografia.csproj.user",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\kryptografia.csproj.user",
+              "RelativeToolTip": "kryptografia.csproj.user",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2025-10-21T14:08:50.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "kryptografia.csproj",
-              "DocumentMoniker": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\kryptografia.csproj",
+              "DocumentMoniker": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\kryptografia.csproj",
               "RelativeDocumentMoniker": "kryptografia.csproj",
-              "ToolTip": "C:\\Users\\student\\Desktop\\nowy folder\\kryptografia\\kryptografia.csproj",
+              "ToolTip": "C:\\Users\\Kuba\\Desktop\\kryptografia\\kryptografia - program\\kryptografia.csproj",
               "RelativeToolTip": "kryptografia.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-21T14:08:39.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-21T14:08:39.096Z"
             }
           ]
         }

@@ -108,12 +108,31 @@ namespace kryptografia
                 try
                 {
                     wynik = SzyfrChaCha.SzyfrujKompatybilny(text, pass, nonceStr, 0);
-                    
+
                     outputTextBox.Text = wynik;
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Błąd szyfrowania ChaCha20: " + ex.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+            else if (selected == "RSA")
+            {
+                string kluczPubliczny = keyTextBox.Text;
+                if (string.IsNullOrWhiteSpace(kluczPubliczny))
+                {
+                    MessageBox.Show("Podaj klucz publiczny!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                try
+                {
+                    wynik = SzyfrRSA.Szyfruj(text, kluczPubliczny);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Błąd szyfrowania RSA: {ex.Message}", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }
@@ -228,6 +247,25 @@ namespace kryptografia
                             return;
                         }
                     }
+                    else if (selected == "RSA")
+                    {
+                        string kluczPubliczny = keyTextBox.Text;
+                        if (string.IsNullOrWhiteSpace(kluczPubliczny))
+                        {
+                            MessageBox.Show("Podaj klucz publiczny!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        try
+                        {
+                            zaszyfrowany = SzyfrRSA.Szyfruj(text, kluczPubliczny);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Błąd szyfrowania RSA: {ex.Message}", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
 
                     using (SaveFileDialog saveFileDialog = new SaveFileDialog())
                     {
@@ -246,7 +284,7 @@ namespace kryptografia
         private void GenerateKeyButton_Click(object sender, EventArgs e)
         {
             string? selected = algorithmComboBox.SelectedItem?.ToString();
-            
+
             if (selected == "AES")
             {
                 const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -290,6 +328,40 @@ namespace kryptografia
             }
 
             ivTextBox.Text = new string(nonce);
+        }
+
+        private void GenerateRSAKeysButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var (publicKey, privateKey) = SzyfrRSA.GenerujKlucze(2048);
+
+                using (SaveFileDialog saveDialog = new SaveFileDialog())
+                {
+                    saveDialog.Filter = "Pliki XML (*.xml)|*.xml|Wszystkie pliki (*.*)|*.*";
+                    saveDialog.FileName = "rsa_public_key.xml";
+                    if (saveDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        File.WriteAllText(saveDialog.FileName, publicKey);
+                    }
+                }
+
+                using (SaveFileDialog saveDialog = new SaveFileDialog())
+                {
+                    saveDialog.Filter = "Pliki XML (*.xml)|*.xml|Wszystkie pliki (*.*)|*.*";
+                    saveDialog.FileName = "rsa_private_key.xml";
+                    if (saveDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        File.WriteAllText(saveDialog.FileName, privateKey);
+                    }
+                }
+
+                MessageBox.Show("Klucze RSA zostały wygenerowane i zapisane!", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Błąd generowania kluczy RSA: {ex.Message}", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void DecryptButton_Click(object sender, EventArgs e)
@@ -353,18 +425,37 @@ namespace kryptografia
                     MessageBox.Show("Błąd odszyfrowania ChaCha20: " + ex.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            else if (selected == "RSA")
+            {
+                string kluczPrywatny = keyTextBox.Text;
+                if (string.IsNullOrWhiteSpace(kluczPrywatny))
+                {
+                    MessageBox.Show("Podaj klucz prywatny!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                try
+                {
+                    string plain = SzyfrRSA.Odszyfruj(pakiet, kluczPrywatny);
+                    outputTextBox.Text = plain;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Błąd odszyfrowania RSA: {ex.Message}", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
             else
             {
-                MessageBox.Show("Odszyfrowywanie obsługiwane tylko dla AES i ChaCha20.", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Odszyfrowywanie obsługiwane tylko dla AES, ChaCha20 i RSA.", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         private void DecryptFileButton_Click(object sender, EventArgs e)
         {
             string? selected = algorithmComboBox.SelectedItem?.ToString();
-            if (selected != "AES" && selected != "ChaCha20")
+            if (selected != "AES" && selected != "ChaCha20" && selected != "RSA")
             {
-                MessageBox.Show("Odszyfrowywanie plików obsługiwane jest tylko dla AES i ChaCha20.", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Odszyfrowywanie plików obsługiwane jest tylko dla AES, ChaCha20 i RSA.", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
@@ -379,7 +470,7 @@ namespace kryptografia
                     string pass = keyTextBox.Text ?? "";
                     if (string.IsNullOrWhiteSpace(pass))
                     {
-                        MessageBox.Show("Podaj klucz (hasło)!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Podaj klucz (hasło/klucz prywatny)!", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
 
@@ -415,6 +506,10 @@ namespace kryptografia
                                 return;
                             }
                         }
+                        else if (selected == "RSA")
+                        {
+                            plain = SzyfrRSA.Odszyfruj(pakiet, pass);
+                        }
 
                         using (SaveFileDialog saveFileDialog = new SaveFileDialog())
                         {
@@ -429,7 +524,7 @@ namespace kryptografia
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Błąd odszyfrowania pliku: " + ex.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show($"Błąd odszyfrowania pliku: {ex.Message}", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
@@ -442,14 +537,16 @@ namespace kryptografia
             bool showKeyClassic = selected == "Szyfr Vigenère'a" || selected == "Running Key Cipher";
             bool showAES = selected == "AES";
             bool showChaCha = selected == "ChaCha20";
+            bool showRSA = selected == "RSA";
 
             shiftNumericUpDown.Visible = shiftLabel.Visible = showShift;
-            keyTextBox.Visible = keyLabel.Visible = showAES || showKeyClassic || showChaCha;
+            keyTextBox.Visible = keyLabel.Visible = showAES || showKeyClassic || showChaCha || showRSA;
             ivTextBox.Visible = ivLabel.Visible = showAES || showChaCha;
             aesModeComboBox.Visible = aesModeLabel.Visible = showAES;
-            
+
             GenerateKeyButton.Visible = showAES || showChaCha;
-            GenerateNonceButton.Visible = showChaCha; 
+            GenerateNonceButton.Visible = showChaCha;
+            GenerateRSAKeysButton.Visible = showRSA;
 
             if (showAES)
             {
@@ -458,6 +555,8 @@ namespace kryptografia
                 ivLabel.Text = "IV:";
                 ivTextBox.PlaceholderText = "Base64 lub hex (opcjonalne)";
                 GenerateKeyButton.Text = "Generuj hasło";
+                keyTextBox.Multiline = false;
+                keyTextBox.Height = 23;
             }
             else if (showChaCha)
             {
@@ -466,11 +565,22 @@ namespace kryptografia
                 ivLabel.Text = "Nonce (12 znaków ASCII):";
                 ivTextBox.PlaceholderText = "Dokładnie 12 znaków ASCII";
                 GenerateKeyButton.Text = "Generuj klucz";
+                keyTextBox.Multiline = false;
+                keyTextBox.Height = 23;
+            }
+            else if (showRSA)
+            {
+                keyLabel.Text = "Klucz (XML):";
+                keyTextBox.PlaceholderText = "Wklej klucz publiczny (szyfrowanie) lub prywatny (odszyfrowanie)";
+                keyTextBox.Multiline = true;
+                keyTextBox.Height = 80;
             }
             else
             {
                 keyLabel.Text = "Klucz:";
                 keyTextBox.PlaceholderText = "";
+                keyTextBox.Multiline = false;
+                keyTextBox.Height = 23;
             }
         }
 
